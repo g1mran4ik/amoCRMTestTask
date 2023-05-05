@@ -1,177 +1,252 @@
-@font-face {
-    font-family: "Montserrat";
-    src: url(../fonts/Montserrat/Montserrat-VariableFont_wght.ttf);
-  }
-  
-  @font-face {
-    font-family: "Inter";
-    src: url(../fonts/Inter/Inter-VariableFont_slnt\,wght.ttf);
-  }
-  
-  .montserrat-12-footer {
-    font-family: "Montserrat";
-    color: #e4e5ea;
-    font-size: 12px;
-  }
-  
-  .montserrat-13 {
-    font-family: "Montserrat";
-    color: #e4e5ea;
-    font-size: 13px;
-    text-transform: uppercase;
-    font-weight: 400;
-  }
-  
-  .inter-12-topmenu {
-    font-family: "Inter";
-    color: #E4E5EA;
-    font-size: 12px;
-    text-transform: uppercase;
-    font-weight: 500;
-  }
-
-  .inter-12-footer {
-    font-family: "Inter";
-    color: #656566;
-    font-size: 12px;
-    letter-spacing: 0.05em;
-    text-transform: uppercase;
-    margin-bottom: 6%;
-    margin-top: 30px;
-    font-weight: 700;
-  }
-  
-  .inter-14-footer {
-    font-family: "Inter";
-    color: #e4e5ea;
-    font-size: 14px;
-    margin-bottom: 10px;
-    font-weight: 400;
-    max-width: 123px;
-
-  }
-  
-  .inter-18 {
-    font-family: "Inter";
-    color: #e4e5ea;
-    font-size: 18px;
-    font-weight: 400;
-    width: 271px;
-    margin-top: 15px;
-  }
-  
-  .inter-18-no-letter-spacing {
-    font-family: "Inter";
-    color: #e4e5ea;
-    font-size: 18px;
-    text-align: left;
-    margin-top: 45px;
-  }
-
-  .inter-36 {
-    font-family: "Inter";
-    font-size: 36px;
-    line-height: 44px;
-    font-weight: 400;
-    color: #E4E5EA;
-    width: 85%;
-    height: 7.9%;
-  }
-  
-  .inter-36-gradient {
-    font-family: "Inter";
-    font-size: 36px;
-    background: linear-gradient(92deg, #fcb045 27.14%, #ff3f78 121.36%), #e4e5ea;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    line-height: 58px;
-    font-weight: 900;
-  }
-  
-  
-  span {
-    background: linear-gradient(90deg, #fcb045, #fd1d1d), #e4e5ea;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    text-transform: uppercase;
-    font-weight: 700;
-    letter-spacing: 0.05em;
-  }
-  
-  .lessRedGrad {
-    background: linear-gradient(90deg, #fcb045 27.14%, #fd1d1d 141.36%), #e4e5ea;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    text-transform: uppercase;
-    font-weight: 700;
-    letter-spacing: 0.05em;
-  }
-  
-  .red-light {
-    position: absolute;
-    width: 66%;
-    height: 19%;
-    top: 21.6%;
-    left: -17.2%;
-    background-color: #961a1a;
-    border-radius: 50%;
-    opacity: 0.5;
-    filter: blur(196px);
-  }
-  
-  .purple-light {
-    position: absolute;
-    width: 80%;
-    height: 23.2%;
-    top: 9.5%;
-    left: 80.6%;
-    background-color: #833ab4;
-    border-radius: 50%;
-    opacity: 0.5;
-    filter: blur(196px);
-  }
-  
-  .purple-ball {
-    position: absolute;
-    width: 12.5%;
-    height: 3.6%;
-    left: 92.5%;
-    top: 21.2%;
-    border-radius: 50%;
-    background: radial-gradient(
-      64% 64% at 27.25% 26.5%,
-      rgba(236, 208, 255, 0.64) 0%,
-      rgba(161, 93, 207, 0.24) 59.67%,
-      rgba(118, 49, 164, 0.208) 78.59%,
-      rgba(86, 24, 128, 0.232) 100%
-    );
-    box-shadow: 3px 6px 27px -10px rgba(177, 118, 217, 0.25);
-    filter: blur(5px);
-  }
-  
-  .red-ball {
-    position: absolute;
-    width: 13.4%;
-    height: 3.85%;
-    left: 9%;
-    top: 36%;
-    border-radius: 50%;
-    background: radial-gradient(
-      64% 64% at 27.25% 26.5%,
-      rgba(255, 208, 208, 0.536) 0%,
-      rgba(212, 93, 93, 0.264) 59.67%,
-      rgba(167, 49, 49, 0.248) 78.59%,
-      rgba(130, 25, 25, 0.248) 100%
-    );
-    box-shadow: 3px 6px 27px -10px rgba(223, 125, 125, 0.25);
-  }
-  
-.line {
-    width: 10px;
-    height: 1px;
-    background-image: url(../images/Line.png);
-    margin-top: 7.4px;
-    margin-right: 5px;
+body {
+  margin: 0;
 }
 
-  
+@font-face {
+  font-family: "Montserrat";
+  src: url(../fonts/Montserrat/Montserrat-VariableFont_wght.ttf);
+}
+
+@font-face {
+  font-family: "Inter";
+  src: url(../fonts/Inter/Inter-VariableFont_slntwght.ttf);
+}
+
+.montserrat {
+  font-family: "Montserrat";
+  color: #e4e5ea;
+}
+
+.inter {
+  font-family: "Inter";
+  color: #e4e5ea;
+}
+
+.header-fixed-mobile {
+  background-color: #1e1e1e;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: space-evenly;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 55px;
+}
+
+.top-menu-mobile-text {
+  font-size: 12px;
+  text-transform: uppercase;
+  font-weight: 500;
+}
+
+.main-screen-mobile {
+  margin-top: 55px;
+  width: 100vw;
+  padding-top: 9%;
+  padding-left: 4.7vw;
+  padding-bottom: 13.2%;
+  box-sizing: border-box;
+  background-image: url(../images/noise.png);
+  background: radial-gradient(
+    238.53% 189.02% at 3.2% 3.49%,
+    rgba(255, 246, 233, 0.1) 0%,
+    rgba(26, 29, 35, 0.1) 26.62%,
+    rgba(26, 29, 35, 0.1) 52.1%,
+    rgba(26, 29, 35, 0.01) 70.17%,
+    rgba(26, 29, 35, 0) 100%
+  );
+}
+
+.main-screen-text-mobile {
+  font-size: 36px;
+  line-height: 44px;
+  font-weight: 400;
+  width: 85vw;
+  height: 7.9%;
+}
+
+.main-screen-text-gradient-mobile {
+  font-size: 36px;
+  background: linear-gradient(92deg, #fcb045 27.14%, #ff3f78 121.36%), #e4e5ea;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  line-height: 58px;
+  font-weight: 900;
+}
+
+.main-screen-description-text-mobile {
+  font-size: 18px;
+  font-weight: 400;
+  width: 85vw;
+  margin-top: 3.6%;
+}
+
+.benefits-intro-text-mobile {
+  font-size: 18px;
+  text-align: left;
+  margin-top: 10.9%;
+}
+
+.benefits-intro-gradient-text-mobile {
+  background: linear-gradient(90deg, #fcb045, #fd1d1d), #e4e5ea;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-transform: uppercase;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+}
+
+.benefits-mobile {
+  display: flex;
+  flex-direction: row;
+  margin-top: 4.8%;
+}
+
+.benefits-block-mobile {
+  display: flex;
+  flex-direction: column;
+}
+
+.right {
+  margin-left: 3.125vw;
+}
+
+.benefits-inner-block-mobile {
+  display: flex;
+  flex-direction: row;
+}
+
+.line-mobile {
+  width: 10px;
+  height: 1px;
+  background-image: url(../images/Line.png);
+  margin-top: 7.4px;
+  margin-right: 5px;
+}
+
+.benefits-inner-block-text-mobile {
+  font-size: 13px;
+  text-transform: uppercase;
+  font-weight: 400;
+}
+
+.footer-mobile {
+  padding-top: 3.7vh;
+  background-color: #1e1e1e;
+  width: 100vw;
+  padding-left: 4.7vw;
+  box-sizing: border-box;
+  padding-bottom: 5.4vh;
+}
+
+.footer-text-header-mobile {
+  font-size: 12px;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  margin-bottom: 6%;
+  margin-top: 30px;
+  font-weight: 700;
+}
+
+.footer-about-list-mobile {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-main-text-mobile {
+  font-size: 14px;
+  margin-bottom: 0.9vh;
+  font-weight: 400;
+  max-width: 38.4vw;
+}
+
+.footer-adress {
+  max-width: none !important;
+}
+
+.menu-list-mobile {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.footer-right {
+  margin-left: 15vw;
+}
+
+.footer-icons-mobile {
+  margin-top: 11px;
+  margin-bottom: 12px;
+}
+
+.footer-rights-and-policy-text-mobile {
+  font-size: 12px;
+}
+
+.rights-text-mobile {
+  margin-top: 4.5vh;
+}
+
+.red-light-mobile {
+  position: absolute;
+  width: 66%;
+  height: 19%;
+  top: 21.6%;
+  left: -17.2%;
+  background-color: #961a1a;
+  border-radius: 50%;
+  opacity: 0.5;
+  filter: blur(196px);
+}
+
+.purple-light-mobile {
+  position: absolute;
+  width: 80vw;
+  height: 23.2vh;
+  top: 9.5vh;
+  left: 80.6vw;
+  background-color: #833ab4;
+  border-radius: 50%;
+  opacity: 0.5;
+  filter: blur(196px);
+}
+
+.purple-ball-mobile {
+  position: absolute;
+  width: 12.5vw;
+  height: 3.6vh;
+  left: 92.5vw;
+  top: 21.165vh;
+  border-radius: 50%;
+  background: radial-gradient(
+    64% 64% at 27.25% 26.5%,
+    rgba(236, 208, 255, 0.64) 0%,
+    rgba(161, 93, 207, 0.24) 59.67%,
+    rgba(118, 49, 164, 0.208) 78.59%,
+    rgba(86, 24, 128, 0.232) 100%
+  );
+  box-shadow: 3px 6px 27px -10px rgba(223, 125, 125, 0.25);
+  filter: blur(5px);
+  backdrop-filter: blur(2px);
+}
+
+.red-ball-mobile {
+  position: absolute;
+  width: 13.4vw;
+  height: 13.4vw;
+  left: 9vw;
+  top: 36vh;
+  border-radius: 50%;
+  background: radial-gradient(
+    64% 64% at 27.25% 26.5%,
+    rgba(255, 208, 208, 0.536) 0%,
+    rgba(212, 93, 93, 0.264) 59.67%,
+    rgba(167, 49, 49, 0.248) 78.59%,
+    rgba(130, 25, 25, 0.248) 100%
+  );
+  box-shadow: 3px 6px 27px -10px rgba(223, 125, 125, 0.25);
+  backdrop-filter: blur(2px);
+  filter: blur(3px);
+}

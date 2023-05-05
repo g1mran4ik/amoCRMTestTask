@@ -11,11 +11,7 @@ module.exports = {
     output: {
         filename: "bundle.js",
         path: path.resolve(__dirname, "build"),
-        assetModuleFilename: pathData => {
-            const filepath = path.dirname(pathData.filename).split('/').slice(1).join('/');
-            return `${filepath}/[name][ext]`;
         },
-    },
     devServer: {
         static: {
             directory: path.join(__dirname, "build"),
@@ -29,15 +25,6 @@ module.exports = {
                 exclude: /node_modules/,
                 use: ["babel-loader"],
             },
-            // {
-            //     test: /\.(scss|css)$/,
-            //     use: [
-            //         'style-loader',
-            //         {loader: 'css-loader', options: {sourceMap: true, importLoaders: 1}},
-            //         {loader: 'postcss-loader', options: {sourceMap: true}},
-            //         {loader: 'sass-loader', options: {sourceMap: true}},
-            //     ],
-            // },
             {
                 test: /\.css$/,
                 use: ["style-loader", "css-loader"],
